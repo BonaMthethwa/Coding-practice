@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Remove Student Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Remove Student</h1>
+        <p>
+            Enter Student number of student to remove.
+        </p>
+        <form action="RemoveStudentServlet.do" method="POST" enctype="multipart/form-data">
+            <table border="0">
+              
+                <tbody>
+                    <tr>
+                        <td>Student number:</td>
+                        <td><input type="text" name="id"/></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="REMOVE STUDENT"/></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </form>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>SubjectDetailsServlet</servlet-name>
+        <servlet-class>za.ac.tut.web.SubjectDetailsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SubjectDetailsServlet</servlet-name>
+        <url-pattern>/SubjectDetailsServlet.do</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <context-param>
+        <param-name>subject_name</param-name>
+        <param-value>Internet Programming</param-value>
+    </context-param>
+    <context-param>
+        <param-name>subject_code</param-name>
+        <param-value>INT316D</param-value>
+    </context-param>
+    <context-param>
+        <param-name>subject_head_name</param-name>
+        <param-value>Vuyisile Memani</param-value>
+    </context-param>
+    <context-param>
+        <param-name>subject_head_email</param-name>
+        <param-value>Memani@vut.ac.za</param-value>
+    </context-param>
+    <context-param>
+        <param-name>num_class_tests</param-name>
+        <param-value>6 </param-value>
+    </context-param>
+    <context-param>
+        <param-name>num_semester_tests</param-name>
+        <param-value>2</param-value>
+    </context-param>
+    <context-param>
+        <param-name>num_quizzes</param-name>
+        <param-value>12</param-value>
+    </context-param>
+    <context-param>
+        <param-name>num_projects</param-name>
+        <param-value>1</param-value>
+    </context-param>
+</web-app>

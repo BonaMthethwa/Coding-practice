@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Add STudent Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Add Student </h1>
+        <p>
+            Please fill in the form below:
+            
+        </p>
+        <form action="AddStudentServlet.do" method="POST" enctype="multipart/form-data">
+            <table >
+                
+                <tbody>
+                    <tr>
+                        <td>Student number :</td>
+                        <td><input type="text" name="id"/></td>
+                    </tr>
+                    <tr>
+                        <td>Name :</td>
+                        <td><input type="text" name="name"/></td>
+                    </tr>
+                    <tr>
+                        <td>Surname :</td>
+                        <td><input type="text" name="surname"/></td>
+                    </tr>
+                    <tr>
+                        <td>Gender :</td>
+                        <td>
+                            <select name="gender">
+                                <option value="F">F</option>
+                                <option value="M">M</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Age :</td>
+                        <td><input type="text" name="age"/></td>
+                    </tr>
+                    <tr>
+                        <td>Date of Birth:</td>
+                        <td><input type="date" name="dob" placeholder="yyyy-mm-dd"/></td>
+                    </tr>
+                    <tr>
+                        <td>Image :</td>
+                        <td><input type="file" name="img" multiple="" accept="image/*"/></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="ADD STUDENT"/></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </form>
+    </body>
+</html>
