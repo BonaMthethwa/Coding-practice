@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>RSPServlet</servlet-name>
+        <servlet-class>RSPServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RPSServlet</servlet-name>
+        <servlet-class>za.ac.tut.model.RPSServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RSPServlet</servlet-name>
+        <url-pattern>/RSPServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RPSServlet</servlet-name>
+        <url-pattern>/RPSServlet.do</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <context-param>
+        <param-name>player_name</param-name>
+        <param-value>Sipho</param-value>
+    </context-param>
+    
+     <context-param>
+        <param-name>computer_name</param-name>
+        <param-value>Siri</param-value>
+    </context-param>
+</web-app>
